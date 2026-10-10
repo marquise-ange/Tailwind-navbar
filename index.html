@@ -9,13 +9,15 @@
 </head>
 
 <body class="min-h-screen bg-slate-50 text-slate-900">
-
+    <!-- Navigation Bar -->
     <nav class="bg-white shadow-sm">
         <div class="mx-auto flex max-w-7xl item-center justify-between px-6 py-7">
+            <!-- logo -->
             <a href="#home"
                 class="rounded-lg text-2xl font-extrabold tracking-tight text-indigo-700 transition-colors hover:text-indigo-900 focus-visible:outline-2 focus-visible:outline-offset-4 focus:outline-indigo-600">
                 Tailwind<span class="text-slate-900">Navbar</span>
             </a>
+            <!-- Desktop Navigation Links -->
 
             <div class="hidden item-center gap-8 md:flex">
                 <a href="#home"
@@ -37,9 +39,18 @@
                     class="rounded-md px-2 py-2 font-medium text-slate-600 transition-colors hover:bg-indigo-50 hover:indigo-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                     Contact
                 </a>
-
             </div>
-            
+            <!--Mobile Navigation Bar-->
+            <button id="menu-button type=" button" arail-label="open navigation menu" arial-controls="mobile-menu"
+                arial-expanded="false"
+                class="inline-flex items-center justify-center rounded-lg p-2 text-slate-700 transition-colors hover:bg-indigo-50 hover:text-indigo-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 md:hidden">
+                <!-- Hamburger Icon -->
+                <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="2"
+                    stroke="currentcolor" class="h-6 w-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
         </div>
     </nav>
 </body>
